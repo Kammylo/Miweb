@@ -1,0 +1,374 @@
+body {
+    background-image: url('imagenes/inicio/ATRACCIONES-REALIDAD-VIRTUAL-EXPERIENCIAS-GAME-APARK-TEPEYACATL-2.png');
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que la imagen se mantenga fija al hacer scroll */
+    background-position: center; /* Centra la imagen de fondo */
+    
+}
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.contenedor{
+	width: auto;
+	margin:0 auto;
+	overflow:hidden;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	transition: 0.7s;
+	padding: 30px 20px;
+	z-index: 10;
+}
+
+header.abajo {
+    background: rgba(255, 255, 255, 35%); /* Fondo blanco semi-transparente */
+    padding: 15px 20px;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    backdrop-filter: blur(10px); /* Aplica el efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con navegadores basados en WebKit */
+    transition: background 0.5s ease; /* Transición suave para el cambio de fondo */
+}
+
+header .logo {
+	color: #fff;
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: 2px;
+	transition: 1.5s;
+	text-decoration: none;
+	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	
+}
+
+header ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+header ul li {
+	list-style: none;
+}
+
+header ul li a {
+	/*position: relative;
+	font-family: helvetica;
+	margin: 0 15px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 600;
+	color: #fff;*/
+	transition: 0.7s;
+	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+	
+}
+/*Imagen de inicio*/
+.inicio{
+	position: absolute;
+	width:5%;
+	left: 5%;
+	top: 1%;
+}
+
+.zona1 {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+
+}
+
+header.abajo .logo,
+header.abajo ul li a {
+	color: #ffffff;
+	font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+	
+}
+
+
+/*Carrusel*/
+
+.slider-box {
+    width: 100%; /* Ancho completo de la pantalla */
+    height: 100vh; /* Alto completo de la pantalla */
+    overflow: hidden;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 200%; /* El doble del ancho de un solo elemento */
+    height: 100%; /* Altura completa del carrusel */
+    animation: slide 10s infinite;
+}
+
+
+.slider-box li {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+
+}
+
+.slider-box img {
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Altura completa del contenedor */
+
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-50%); } /* Desplaza el carrusel a la izquierda */
+    100% { transform: translateX(0); }
+}
+
+/*Bloque 1 imagenes*/
+.IO{
+    position: relative;
+    width: 100%;
+    top: 100%;
+}
+.I1{
+    position: relative;
+    width: 100%;
+    top: 220px;
+}
+.IO2{
+    position: absolute;
+    width: 100%;
+    top: 197%;
+}
+
+/*Bloque 2 imagenes*/
+.LP{
+    position: absolute;
+    width: 100%;
+    top: 200%;
+    left: 36%;
+    width: 20%; /* Ajusta el tamaño de la imagen superpuesta */
+	height: auto; /* Mantiene la proporción de la imagen */
+}
+.PP{
+    position: absolute;
+    width: 100%;
+    top: 260%;
+    left: 2%;
+    width: 31%; /* Ajusta el tamaño de la imagen superpuesta */
+	height: auto; /* Mantiene la proporción de la imagen */
+}
+.PP1{
+    position: absolute;
+    width: 100%;
+    top: 260%;
+    left: 35%;
+    width: 31%; /* Ajusta el tamaño de la imagen superpuesta */
+	height: auto; /* Mantiene la proporción de la imagen */
+}
+.PP2{
+    position: absolute;
+    width: 100%;
+    top: 260%;
+    left: 68%;
+    width: 31%; /* Ajusta el tamaño de la imagen superpuesta */
+	height: auto; /* Mantiene la proporción de la imagen */
+}
+/*Imagens bloque 3*/
+.PA{
+    position: absolute;
+    width: 100%;
+    top: 308%;
+}
+/*Ultimo bloque*/
+.U1{
+    position: absolute;
+    width: 30%;
+    top: 460%;
+    left: 10%;
+}
+/*Texto de inico*/
+.P1{
+    position: absolute;
+    top: 116%;
+    left: 25%;
+	color: #F1B56C;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+	text-align: center;
+	line-height: 1.5;
+    font-size: 140%;
+}
+
+
+/*Texto de precios */
+.P2{
+    position: absolute;
+    top: 240%;
+    left: 25%;
+	color: #3C1B12;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+	text-align: center;
+    font-size: 480%;
+
+}
+.Precio1{
+    position: absolute;
+    top: 273%;
+    left: 6%;
+    color: #3C1B12;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 150%;
+    transform: rotate(-8deg); 
+}
+.B2{
+    font-size: 200%;
+    margin-block: 3%;
+    font-weight: 600; /* SemiBold (600) */
+}
+.Precio2{
+    position: absolute;
+    top: 273%;
+    left: 40%;
+    color: #3C1B12;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 150%;
+    transform: rotate(-8deg); 
+}
+.Precio3{
+    position: absolute;
+    top: 270%;
+    left: 74%;
+    color: #3C1B12;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 150%;
+    transform: rotate(-8deg); 
+}
+/*Boton*/
+/* Estilo para el contenedor del botón */
+.button-container {
+	left: 40%;
+	top: 260%;
+	position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo del botón */
+.btn {
+    background-color: #a96224ef; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 15px 25px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Elimina subrayado del enlace */
+    display: inline-block;
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Borde redondeado */
+    transition: background-color 0.3s; /* Transición para el cambio de color */
+}
+
+/* Efecto hover para el botón */
+.btn:hover {
+    background-color: #be6013; /* Cambio de color al pasar el cursor */
+}
+/*Promociones bloque 3*/
+
+.P3{
+    position: absolute;
+    top: 355%;
+    left: 50%;
+    color: #e449a3;
+    font-family: 'Montserrat', sans-serif; /* Aplicar Montserrat a todo el documento */
+    font-size: 400%;
+    font-weight: 600; /* SemiBold (600) */
+   
+}
+.B3{
+    color: #000;
+    font-size: 40%;
+    margin-block: 5%;
+    line-height: 2;
+}
+/*Boto2*/
+/* Estilo para el contenedor del botón */
+.button-container2 {
+	left: 52%;
+	top: 370%;
+	position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo del botón */
+.btn2 {
+    background-color: #9026e1ef; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 15px 25px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Elimina subrayado del enlace */
+    display: inline-block;
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 5px; /* Borde redondeado */
+    transition: background-color 0.3s; /* Transición para el cambio de color */
+}
+
+/* Efecto hover para el botón */
+.btn2:hover {
+    background-color: #4dcbcd; /* Cambio de color al pasar el cursor */
+}
+/*Texto te ubcason*/
+.C1{
+    position: absolute;
+    top: 480%;
+    left: 5%;
+	color: #F1B56C;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 150%;
+    text-align: center;
+}
+.C2{
+    margin-block: 10%;
+    text-align:left;
+    line-height: 1.5;
+}
+
+/* Estilo para el contenedor del mapa */
+.map-container {
+	position: absolute;
+	top: 510%; /* Centra verticalmente */
+	left: 75%; /* Centra horizontalmente */
+	transform: translate(-50%, -50%); /* Ajusta la posición para estar en el centro */
+}
+/*Adapatacon*/
+/* Estilo general para las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media Queries para mejor adaptabilidad */
+@media (max-width: 370px) {
+
+}
